@@ -1,37 +1,29 @@
-const navSlide = () => {
+document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksLi = document.querySelectorAll('.nav-links li');
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-
-        navLinks.forEach((link, index) => {
+    const toggleNav = () => {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+        navLinksLi.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
             }
         });
+    };
 
-        burger.classList.toggle('toggle');
-    });
-}
+    burger.addEventListener('click', toggleNav);
 
-navSlide();
-
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Simulate sending an email (replace with actual backend logic)
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-    alert('Message sent! (Simulated)');
-
-    contactForm.reset();
+    // Basic form submission handling (for demonstration - no actual backend)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Message sent successfully! (This is a simulation)');
+            contactForm.reset();
+        });
+    }
 });
