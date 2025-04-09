@@ -71,28 +71,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========== Blog Posts ==========
     const blogPosts = [
         {
-            title: "Understanding OOP Principles",
-            date: "June 15, 2023",
-            excerpt: "Exploring the core concepts of object-oriented programming...",
-            image: "assets/images/blog-oop.jpg"
+            title: "UX & INTERACTIVITY",
+            date: "April 2025",
+            excerpt: "Exploring visual programming...",
         },
         {
-            title: "Python Performance Tips", 
+            title: "JS PERFORMANCE TIPS", 
             date: "May 22, 2023",
-            excerpt: "Practical techniques to optimize your Python code...",
-            image: "assets/images/blog-python.jpg"
+            excerpt: "Practicalities & Assets",
+ 
         },
         {
-            title: "C# Best Practices",
+            title: "CSS BEST PRACTICES",
             date: "April 10, 2023",
-            excerpt: "Essential patterns for writing maintainable C# code...",
-            image: "assets/images/blog-csharp.jpg"
+            excerpt: "Essential patterns for writing maintainable CSS code...",
         },
         {
             title: "Debugging Strategies",
             date: "March 5, 2023",
             excerpt: "Effective approaches to identify and fix bugs...",
-            image: "assets/images/blog-debugging.jpg"
         }
     ];
 
@@ -104,9 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const blogPost = document.createElement('article');
             blogPost.className = 'blog-post';
             blogPost.innerHTML = `
-                <div class="blog-post-image">
-                    <img src="${post.image}" alt="${post.title}" loading="lazy">
-                </div>
+                
                 <div class="blog-post-content">
                     <h3>${post.title}</h3>
                     <p class="post-date">${post.date}</p>
@@ -259,41 +254,30 @@ form.addEventListener('submit', validateForm);
 // Projects data
 const projectsData = [
     {
-      title: "E-commerce Website",
-      description: "A full-stack e-commerce platform with React and Node.js",
+      title: "EPL Website",
+      description: "A Complete Design with HTML and CSS",
       category: "web",
-      image: "assets/images/project-web1.jpg"
+      image: "weby.png"
     },
     {
-      title: "Data Visualization Dashboard",
+      title: "LIBRARY DASHBOARD",
       description: "Interactive dashboard for analyzing sales data",
       category: "data",
-      image: "assets/images/project-data1.jpg"
+      image: "jas.jpg"
     },
     {
       title: "Chatbot Implementation",
       description: "AI-powered customer support chatbot",
       category: "ai",
-      image: "assets/images/project-ai1.jpg"
+      image: "chash.png"
     },
     {
-      title: "Portfolio Website",
-      description: "Responsive portfolio built with HTML/CSS/JS",
+      title: "LOGIN FORM",
+      description: "Responsive built with HTML/CSS/JS",
       category: "web",
-      image: "assets/images/project-web2.jpg"
+      image: "css3-2.png"
     },
-    {
-      title: "Stock Market Predictor",
-      description: "Machine learning model for stock predictions",
-      category: "ai",
-      image: "assets/images/project-ai2.jpg"
-    },
-    {
-      title: "Data Cleaning Tool",
-      description: "Python script for automating data cleaning",
-      category: "data",
-      image: "assets/images/project-data2.jpg"
-    }
+    
   ];
   
   function loadProjects(filter = 'all') {
