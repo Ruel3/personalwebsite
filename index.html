@@ -1,94 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel Rukundo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="styles/styles.css">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./assets/images/favicon-32x32.png">
+    <title>portifolio</title>
 </head>
-<body>
-    <header>
+
+<body class="body-primary">
+
+<main class="body-main">
+    <div class="rapper">
+        <section class="hero-intro" >
+            <nav>
+                <div class="hero-contact">
+                    <div class="header-contact">
+                        <h1>emmanuel</h1>
+                        <div id="links_header" class="hero-links" style="margin-bottom: 1em;"></div>
+                    </div>
+                </div>
+
+                <div class="profile-image">
+                <img src="assets/images/profile.png" alt="" class="images">
+                </div>
+
+
+            </nav>
+
+            <div class="intro">
+                <h2><span class="small">Hi there!</span> <br>
+
+                    I'm <br>
+                    <a href="#"
+                    target="_blank" class="link"><span class="underline ">Emmanuel </span>Rukundo.</a>
+
+                </h2>
+                <p class="hero-para">
+                    I'm a skilled programmer with expertise in C++, Python, and C#, as well as strong leadership abilities. I am passionate about leveraging these skills to build robust and efficient software solutions.
+                </p>
+                <a href="#"
+                aria-label="contact_by_email"
+                target="_blank"
+                class="contact_link">Contact me</a>
+            </div>
+        </section>
+
+
+        <section id="main" class="main">
+            <div class="container_skills">
+                <h2>What I'm Up To</h2>
+                <div style="display: flex;margin-top: 3em;">
+                    <p class="uptopara">Currently, I'm focused on mastering the fundamentals of p
+                        rogramming languages, including C++, Python, and C#. Through this journey, I've gained strong problem-solving skills, a deep understanding of object-oriented programming, and the ability to write clean, efficient code. <br> <br> <a href="#" class="listskills"> Here is the list of skills I gained ..</a> </p>
+                 </div>
+                <dl id="skills"></dl>
+
+            </div>
+
+            <div class="container_projects">
+                <div class="title">
+
+                    <h3>My Projects</h3>
+                </div>
+                <div class="project-listing">
+                <dl id="projects" class="projects"></dl>
+                </div>
+
+
+            </div>
+            <div class="container_contact_footer">
+
+                <div class="container_contact">
+                    <div class="containter_contact_text">
+                        <h2>Contact</h2>
+                        <p>I would love to hear about your project and how I could help. </p>
+                    </div>
+                    <form novalidate>
+
+                        <div class="input_container input">
+                            <input type="text"
+                                    id="name"
+                                    name="name"
+                                    aria-label="name"
+                                    placeholder="Name"
+                                    required>
+                            <span id="nameErrorIcon"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="input_error_name"></span>
+                            </span><span id="nameError"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="input_error_name"></span>
+                        </div>
+                        <div class="input_container">
+                            <input type="text"
+                                    placeholder="Email"
+                                    id="email"
+                                    name="email"
+                                    aria-label="email"
+                                    required><span id="emailErrorIcon"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="email_error_name"></span>
+
+                            <span id="emailError"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="input_error_email">
+                            </span>
+                        </div>
+
+                        <div class="textarea_container">
+                            <textarea id="message"
+                                        name="message"
+                                        aria-label="message"
+                                        type="text"
+                                        placeholder="Message"
+                                        required></textarea>
+                            <span id="messageErrorIcon"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="input_error_message"></span>
+
+                            <span id="messageError"
+                                    aria-live="polite"
+                                    role="alert"
+                                    class="message_error"></span>
+                            <div>
+                                <button role="submit"
+                                        id="submit">Send message</button>
+
+                    </form>
+
+                </div>
+                
+                
+            </section>
+    </div>
+
+</main>
+    <footer class="footer">
         <nav>
-            <div class="logo">Emmanuel Rukundo</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <h1>emmanuel</h1>
+            <div id="links_footer" class="links_footer"></div>
         </nav>
-    </header>
-
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Emmanuel Rukundo</h1>
-            <p>A passionate developer and creator.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Driven by an insatiable curiosity for the digital realm, 
-            I am a passionate and versatile technologist with a robust foundation in computer science and information technology.
-            My journey began with a fascination for the intricate logic underpinning software development,
-            which led me to cultivate a strong proficiency in core programming languages like JavaScript, Python, and Java.
-            I possess a deep understanding of object-oriented programming principles, data structures, and algorithms,
-            enabling me to design and implement efficient and scalable solutions.
-            My expertise extends beyond pure software development, encompassing a comprehensive grasp of web technologies,
-            including HTML5, CSS3, and modern JavaScript frameworks such as React.
-            I am adept at crafting responsive and intuitive user interfaces, ensuring seamless experiences across diverse platforms
-            and devices. My commitment to staying abreast of the ever-evolving tech landscape has driven me to explore backend development,
-            where I have gained practical experience with Node.js and Express.js, enabling me to build robust and efficient server-side applications.
-            My experience with databases, both relational (like MySQL and PostgreSQL) and NoSQL (like MongoDB), allows me to manage and manipulate data effectively, ensuring data integrity and accessibility..</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">JavaScript</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <img src="ProjectManagement.jpeg" alt="Project 1">
-                <h3>Project 1 Title</h3>
-                <p>Short description of project 1.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-            </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" id="name" required>
-            <input type="email" placeholder="Your Email" id="email" required>
-            <textarea placeholder="Your Message" id="message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/Ruel3"><img src="Github.jpeg" alt="GitHub"></a>
-            <a href="https://linkedin.com/in/yourprofile"><img src="linkedln.jpeg" alt="LinkedIn"></a>
-            </div>
-        <p>&copy; 2024 Emmanuel Rukundo </p>
     </footer>
 
-    <script src="script.js"></script>
+
+   
+    <script src="/js/data.js"
+            defer></script>
+    <script src="/js/social.js"
+            defer></script>
+    <script src="/js/skills.js"
+            defer></script>
+    <script src="/js/projects.js"
+            defer></script>
+    <script src="/js/form.js"
+            defer></script>
+
 </body>
+
 </html>
