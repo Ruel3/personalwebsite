@@ -411,6 +411,9 @@ section {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  width: 100%; /* Set width based on parent width */
+    max-width: 300px; /* Limit maximum width of project card */
+    margin: 10px; 
 }
 
 .project-card:hover {
@@ -425,6 +428,7 @@ section {
 
 .project-content {
   padding: 1.5rem;
+  text-align: center;
 }
 
 .project-title {
@@ -456,8 +460,8 @@ section {
 
 /* Form Styles */
 form {
-  max-width: 600px;
-  margin: 0 auto;
+  min-width: 465px;
+  margin: 0 0;
 }
 
 .input_container {
@@ -480,13 +484,6 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: var(--verified-black);
 }
 
 /* Typography */
@@ -583,4 +580,38 @@ input:focus {
   font-weight: 500;
   margin-top: 1rem;
   display: none;
+}
+
+
+
+/* Add to styles.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1; /* Takes remaining vertical space */
+}
+
+/* Add to styles.css */
+.container_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align all items */
+}
+
+.containter_contact_text {
+  margin-bottom: 20px; /* Space between text and form */
+}
+
+.input_container input {
+  width: 100%; /* Full width to match text above */
+  box-sizing: border-box; /* Prevent overflow */
+}
+.footer {
+  margin-top: auto; /* Pushes footer to bottom */
+  
 }
