@@ -12,26 +12,23 @@
 
 <body class="body-primary">
   <!-- Navigation Bar -->
-  <!-- Keep your existing nav but add data-scrollspy links -->
-<nav class="main-nav">
-  <div class="nav-container">
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link" data-scrollspy="home">Home</a></li>
-      <li><a href="#about" class="nav-link" data-scrollspy="about">About</a></li>
-      <li><a href="#blog" class="nav-link" data-scrollspy="blog">Blog</a></li>
-      <li><a href="#projects" class="nav-link" data-scrollspy="projects">Projects</a></li>
-      <li><a href="#contact" class="nav-link" data-scrollspy="contact">Contact</a></li>
-    </ul>
-    
-    <!-- Theme toggle remains the same -->
-    <div class="theme-toggle">
-      <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
-      <label for="theme-toggle" class="toggle-label">
-        <span class="toggle-handle"></span>
-      </label>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link" data-scrollspy="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-scrollspy="about">About</a></li>
+        <li><a href="#blog" class="nav-link" data-scrollspy="blog">Blog</a></li>
+        <li><a href="#projects" class="nav-link" data-scrollspy="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-scrollspy="contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+        <label for="theme-toggle" class="toggle-label">
+          <span class="toggle-handle"></span>
+        </label>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <div class="content-wrapper">
     <!-- Home Section -->
@@ -41,7 +38,7 @@
           <div class="intro">
             <h2 id="greeting"></h2>
             <h2>
-              <span class="underline">Emmanuel</span> Rukundo.</a>
+              <span class="underline">Emmanuel</span> Rukundo.
             </h2>
             <p class="hero-para">
               I'm a skilled programmer with expertise in C++, Python, and C#, as well as strong leadership abilities. 
@@ -53,62 +50,60 @@
     </section>
 
     <!-- About Section -->
-    <!-- About Section -->
-<section id="about" class="about">
-  <div class="rapper">
-    <div class="container_skills">
-      <h2>About</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="Mypic.jpeg  " alt="Emmanuel working on code">
-        </div>
-        <div class="about-text">
-          <p class="uptopara">
-            Currently, I'm focused on mastering the fundamentals of programming languages, 
-            including C++, Python, and C#. Through this journey, I've gained strong 
-            problem-solving skills, a deep understanding of object-oriented programming, 
-            and the ability to write clean, efficient code.
-          </p>
+    <section id="about" class="about">
+      <div class="rapper">
+        <div class="container_skills">
+          <h2>About</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="psycho.jpg" alt="Emmanuel working on code">
+            </div>
+            <div class="about-text">
+              <p class="uptopara">
+                Currently, I'm focused on mastering the fundamentals of programming languages, 
+                including C++, Python, and C#. Through this journey, I've gained strong 
+                problem-solving skills, a deep understanding of object-oriented programming, 
+                and the ability to write clean, efficient code.
+              </p>
+            </div>
+          </div>
+          <dl id="skills"></dl>
         </div>
       </div>
-      <dl id="skills"></dl>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Blog Section -->
-    <!-- Blog Section -->
-<section id="blog" class="blog">
-  <div class="rapper">
-    <h2>My Blog</h2>
-    <div class="blog-posts" id="blog-posts-container">
-      <!-- Blogs will be dynamically inserted here -->
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="projects">
-  <div class="rapper">
-    <div class="container_projects">
-      <div class="projects-header">
-        <div class="title">
-          <h3>My Projects</h3>
-        </div>
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="data">Data</button>
-          <button class="filter-btn" data-filter="ai">AI</button>
+    <section id="blog" class="blog">
+      <div class="rapper">
+        <h2>My Blog</h2>
+        <div class="blog-posts" id="blog-posts-container">
+          <!-- Blogs will be dynamically inserted here -->
         </div>
       </div>
-      <div class="project-listing">
-        <div id="projects-list" class="projects-grid"></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    <!-- Contact Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="rapper">
+        <div class="container_projects">
+          <div class="projects-header">
+            <div class="title">
+              <h3>My Projects</h3>
+            </div>
+            <div class="project-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="data">Data</button>
+              <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+          </div>
+          <div class="project-listing">
+            <div id="projects-list" class="projects-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <div class="rapper">
         <div class="container_contact_footer">
@@ -139,13 +134,9 @@
         </div>
       </div>
     </section>
-  </div>
 
   <footer class="footer">
-    <nav>
-      <h1>emmanuel</h1>
-      <div id="links_footer" class="links_footer"></div>
-    </nav>
+  
   </footer>
 </body>
 </html>
