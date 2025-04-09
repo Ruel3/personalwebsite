@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Greater Programmer - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>portifolio</title>
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
+
+<body class="body-primary">
+
+  <main class="body-main">
+    <div class="rapper">
+      <section class="hero-intro">
         <nav>
-            <div class="logo">The Greater Programmer</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+          <div class="hero-contact">
+            <div class="header-contact">
+              <h1>emmanuel</h1>
+              <div id="links_header" class="hero-links" style="margin-bottom: 1em;"></div>
             </div>
+          </div>
+
+          <div class="profile-image">
+            <img src="assets/images/profile.png" alt="" class="images">
+          </div>
         </nav>
-    </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>I Am The Greater Programmer</h1>
-                <p>A highly skilled and passionate developer with a proven track record of building innovative and robust web applications.</p>
-                <a href="#projects" class="button">Explore My Work</a>
-            </div>
-            <div class="hero-image">
-                <img src="ProjectManagement.jpeg" alt="Abstract Programming Illustration">
-            </div>
-        </section>
+        <div class="intro">
+          <h2 id="greeting"></h2>
+          <h2><span class="small">Hi there!</span> <br>
+            I'm <br>
+            <a href="#" target="_blank" class="link"><span class="underline ">Emmanuel </span>Rukundo.</a>
+          </h2>
+          <p class="hero-para">
+            I'm a skilled programmer with expertise in C++, Python, and C#, as well as strong leadership abilities. I am passionate about leveraging these skills to build robust and efficient software solutions.
+          </p>
+          <a href="#" aria-label="contact_by_email" target="_blank" class="contact_link">Contact me</a>
+        </div>
+      </section>
 
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>With a deep understanding of web technologies and a commitment to clean, efficient code, I excel at turning complex ideas into functional and user-friendly solutions. My expertise spans front-end development with HTML, CSS, and JavaScript, creating dynamic and responsive interfaces. I am adept at problem-solving and continuously strive to learn and implement the latest industry best practices.</p>
-            <p>My passion lies in crafting exceptional digital experiences. I take pride in the quality and performance of my work, ensuring every project is delivered to the highest standard.</p>
-        </section>
 
-        <section id="projects" class="projects">
-            <h2>My Notable Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="assets/project-library.svg" alt="Library Website Project">
-                    <h3>Library Website</h3>
-                    <p>Developed a fully functional library website allowing users to browse available books, borrow, and return them. Implemented a dynamic shelf to track book availability.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+      <section id="main" class="main">
+        <div class="container_skills">
+          <h2>What I'm Up To</h2>
+          <div style="display: flex;margin-top: 3em;">
+            <p class="uptopara">Currently, I'm focused on mastering the fundamentals of
+              programming languages, including C++, Python, and C#. Through this journey, I've gained strong
+              problem-solving skills, a deep understanding of object-oriented programming, and the ability to write
+              clean, efficient code. <br> <br> <a href="#" class="listskills"> Here is the list of skills I gained
+                ..</a> </p>
+          </div>
+          <dl id="skills"></dl>
+
+        </div>
+
+        <div class="container_projects">
+          <div class="title">
+
+            <h3>My Projects</h3>
+          </div>
+          <div class="project-listing">
+            <dl id="projects" class="projects"></dl>
+          </div>
+        </div>
+
+        <div class="container_contact_footer">
+            <div class="container_contact">
+                <div class="containter_contact_text">
+                    <h2>Contact</h2>
+                    <p>I would love to hear about your project and how I could help.</p>
+                </div>
+                <form novalidate onsubmit="validateForm(event); return false;">
+                    <div class="input_container">
+                        <input type="text" id="name" name="name" aria-label="name" placeholder="Name" required>
+                        <span id="nameError" class="error"></span>
                     </div>
-                    <a href="#" class="button button-secondary" target="_blank">View Details</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/project-forms.svg" alt="Form Creation Project">
-                    <h3>Dynamic Form Builder</h3>
-                    <p>Created a versatile tool for generating various types of web forms with different input fields, validations, and submission handling.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="input_container">
+                        <input type="email" id="email" name="email" aria-label="email" placeholder="Email" required>
+                        <span id="emailError" class="error"></span>
                     </div>
-                    <a href="#" class="button button-secondary" target="_blank">View Details</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/project-football.svg" alt="Football Table Project">
-                    <h3>Interactive Football Table</h3>
-                    <p>Designed and implemented a dynamic football league table with real-time updates, sorting capabilities, and visual representation of team standings.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="input_container">
+                        <input type="text" id="phone" name="phone" aria-label="phone" placeholder="Phone">
+                        <span id="phoneError" class="error"></span>
                     </div>
-                    <a href="#" class="button button-secondary" target="_blank">View Details</a>
-                </div>
-
-                </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="button">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 The Greater Programmer. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <div>
+                        <button type="submit" id="submit">Send message</button>
+                        <p id="successMessage" style="color: green; margin-top: 10px;"></p>
+                    </div>
+                </form>
             </div>
-    </footer>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <nav>
+      <h1>emmanuel</h1>
+      <div id="links_footer" class="links_footer"></div>
+    </nav>
+  </footer>
 
-    <script src="script.js"></script>
+
+
 </body>
+
 </html>
